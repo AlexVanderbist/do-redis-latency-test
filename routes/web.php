@@ -1,5 +1,6 @@
 <?php
 
+use App\Jobs\ProcessRawReportJob;
 use Illuminate\Support\Facades\Route;
 
 /*
