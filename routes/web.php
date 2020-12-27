@@ -18,6 +18,7 @@ Route::any('test', function (): void {
     $start = microtime(true);
     dispatch(new ProcessRawReportJob()); // temp
     logger("Dispatch time: ".(microtime(true) - $start));
+    return 'ok';
 });
 
 Route::get('/', function () {
